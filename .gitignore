@@ -1,1 +1,12 @@
+# Ignorar archivos del sistema de macOS
 .DS_Store
+
+# Ignorar archivos de logs
+*.log
+
+# Ignorar node_modules en proyectos de Node.js
+node_modules/
+
+# Ignorar dependencias de Python
+__pycache__/
+*.pyc
