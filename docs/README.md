@@ -12,12 +12,33 @@ El catálogo Fermi-LAT contiene miles de fuentes gamma, muchas de las cuales aú
 
 ## Estructura del Repositorio
 ```bash
-├── data/                   # Conjuntos de datos y archivos de entrada
-├── notebooks/              # Notebooks de Jupyter para análisis exploratorio y evaluación de modelos
-├── src/                    # Código fuente para preprocesamiento, entrenamiento y evaluación de modelos
-├── CITATION.cff            # Archivo de citación para este repositorio
-├── README.md               # Este archivo
-└── LICENSE                 # Información sobre la licencia
+/mi-proyecto-ml-dark-matter/
+│── data/                 
+│   │── raw/              # Datos sin procesar
+│   │── processed/        # Datos limpios y normalizados
+│── notebooks/            # Jupyter Notebooks para análisis
+│   │── 01_exploracion.ipynb  # Exploración de datos y visualización
+│   │── 02_preprocesamiento.ipynb  # Limpieza, normalización y guardado
+│   │── 03_entrenamiento_modelo.ipynb  # Entrenamiento de OneClassSVM
+│── src/                  
+│   │── data_processing/  
+│   │   ├── clean_data.py  # Limpieza y eliminación de duplicados
+│   │   ├── normalize_data.py  # Normalización de datos
+│   │── models/           
+│   │   ├── one_class_svm.py  # Definición del modelo OneClassSVM
+│   │   ├── train_model.py  # Entrenamiento y evaluación
+│── scripts/              
+│   │── preprocess_data.py  # Automatiza preprocesamiento
+│   │── train_model.py  # Automatiza entrenamiento
+│── results/              
+│   │── figures/          
+│   │── reports/          
+│── docs/                 
+│   │── README.md         
+│── requirements.txt      
+│── setup.py              
+│── .gitignore            
+│── README.md             
 ```
 
 # Licencia
