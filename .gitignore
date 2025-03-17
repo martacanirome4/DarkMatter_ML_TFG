@@ -9,4 +9,18 @@ node_modules/
 
 # Ignorar dependencias de Python
 __pycache__/
+
+src/.ipynb_checkpoints/
+
+# Ignorar archivos de configuración de Visual Studio Code
+.vscode/
+
+# Ignorar archivos de configuración de Jupyter Notebook
+.ipynb_checkpoints/
+
+# Ignorar archivos de configuración de Python
 *.pyc
+
+
+# Ingorar carpeta de entorno virtual de Python
+.venv/
