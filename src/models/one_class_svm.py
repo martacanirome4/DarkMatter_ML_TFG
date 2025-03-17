@@ -11,40 +11,51 @@ def train_model(save_plots=True, show_plots=False):
 
     import datetime
 
-    # Timestamp para nombres únicos
     timestamp = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M')
 
     project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 
-    # Rutas a datos
     astro_file = os.path.join(project_root, 'data', 'processed', 'XY_bal_log_Rel', 'astro', 'XY_bal_log_Rel_astro.txt')
     dm_file = os.path.join(project_root, 'data', 'processed', 'XY_bal_log_Rel', 'DM', 'XY_bal_log_Rel_DM.txt')
 
-    # Leer datos
     astro_data = pd.read_csv(astro_file, sep=' ', header=None)
     dm_data = pd.read_csv(dm_file, sep=' ', header=None)
 
     # Features
-    X_astro = astro_data.iloc[:, :-1].values
+    # leer todas las columnas excepto la última
+    X_astro = astro_data.iloc[:, :-1].values # -1 para excluir la última columna
     X_dm = dm_data.iloc[:, :-1].values
 
     # Etiquetas
+    # etiquetas positivas para astro, negativas para DM
     y_astro = [1] * len(X_astro)
     y_dm = [-1] * len(X_dm)
 
+    # Combinar astro y DM
     X_all = np.vstack((X_astro, X_dm))
     y_all = np.array(y_astro + y_dm)
 
+    # Dividir en entrenamiento y test
     _, X_test, _, y_test = train_test_split(X_all, y_all, test_size=0.3, random_state=42)
 
+    # Entrenar modelo: parámetros por defecto: kernel='rbf', gamma='auto', nu=0.1
+    # parámetros ajustables: kernel, gamma, nu
     model = OneClassSVM(kernel='rbf', gamma='auto', nu=0.1)
     model.fit(X_astro)
 
+    # Evaluar modelo: lo que hace es predecir si los datos son normales o anómalos
     y_pred = model.predict(X_test)
 
     print("🔍 Confusion Matrix:")
+    # La matriz de confusión es una tabla con 4 celdas:
+    # Verdaderos Positivos (VP): predijo correctamente que era normal
+    # Verdaderos Negativos (VN): predijo correctamente que era anómalo
+    # Falsos Positivos (FP): predijo incorrectamente que era normal
+    # Falsos Negativos (FN): predijo incorrectamente que era anómalo
     print(confusion_matrix(y_test, y_pred))
+
     print("\n📊 Classification Report:")
+    # El classification report muestra métricas como precisión, recall y f1-score
     print(classification_report(y_test, y_pred))
 
     # Crear carpeta logs
@@ -108,6 +119,7 @@ def train_model(save_plots=True, show_plots=False):
     plt.close()
 
     # ------ GRAFICO 3: Predicciones ------
+
     # ------- DOCUMENTACIÓN: Visualización vs Entrenamiento -------
     # Los datos tienen 4 features reales:
     # 1. Log(E_peak), 2. Log(beta), 3. Log(sigma), 4. Log(beta_rel)
@@ -117,6 +129,7 @@ def train_model(save_plots=True, show_plots=False):
     # Para graficar la frontera de decisión, completamos los otros 2 (sigma y beta_rel)
     # con su valor promedio en los datos de entrenamiento (Astro).
     # Esto nos permite "fingir" que estamos en 4D mientras visualizamos en 2D.
+
     X_vis_test = X_test[:, :2]
     plt.figure(figsize=(10, 6))
     sns.scatterplot(x=X_vis_test[:, 0], y=X_vis_test[:, 1], hue=y_pred, palette={1: 'green', -1: 'orange'}, alpha=0.6)
