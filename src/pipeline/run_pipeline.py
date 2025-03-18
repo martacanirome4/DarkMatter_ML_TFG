@@ -1,3 +1,4 @@
+# FILE: src/pipeline/run_pipeline.py
 import sys
 import os
 
@@ -15,10 +16,13 @@ def main():
     separate_data()
 
     train_model(save_plots=True, show_plots=False)
-    print("\n🎯 Pipeline completo.")
 
     apply_oneclasssvm_to_unids()
-    print("\n🎯 Pipeline completo.")
- 
+    
+    print("\n✅ Detección de anomalías completada.")
+    print("\n🎯 Pipeline completo y exitoso.")
+
+
+
 if __name__ == "__main__":
     main()

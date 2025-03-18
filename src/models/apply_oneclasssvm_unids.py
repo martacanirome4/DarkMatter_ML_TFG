@@ -1,3 +1,4 @@
+# FILE: src/models/apply_oneclasssvm_unids.py a
 import os
 import pandas as pd
 import numpy as np
@@ -5,8 +6,7 @@ from sklearn.svm import OneClassSVM
 from sklearn.preprocessing import StandardScaler
 
 def apply_oneclasssvm_to_unids():
-    # Rutas al proyecto
-    project_root = os.path.abspath(os.path.join(os.getcwd(), '..', '..'))  # si notebook
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
     astro_file = os.path.join(project_root, 'data', 'processed', 'XY_bal_log_Rel', 'astro', 'XY_bal_log_Rel_astro.txt')
     unids_file = os.path.join(project_root, 'data', 'raw', 'unids_3F_beta_err_names.txt')
 
