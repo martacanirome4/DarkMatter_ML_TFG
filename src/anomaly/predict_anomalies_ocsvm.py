@@ -36,14 +36,13 @@ df_test['anomaly'] = y_pred
 df_test.to_csv(os.path.join(project_root, 'outputs', 'anomalies', 'anomalies_ocsvm_astro.txt'), sep='\t', index=False)
 print("Anomalías detectadas y guardadas en outputs/anomalies/anomalies_ocsvm_astro.txt")
 
-# Contar anomalías detectadas
 print(df_test['anomaly'].value_counts())
 
-# Calcular scores de anomalía: score más negativo = más anómalo
 anomaly_scores = ocsvm.decision_function(X_test_scaled)
 df_test['anomaly_score'] = anomaly_scores
 
-# Visualizar la distribución de scores de anomalía
+# --- Visualización de resultados ---
+# Histograma de scores de anomalía
 plt.figure(figsize=(8, 5))
 plt.hist(df_test['anomaly_score'], bins=30, edgecolor='blue',  color='pink')
 plt.xlabel('Score de Anomalía (OCSVM)')

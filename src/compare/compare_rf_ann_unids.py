@@ -4,29 +4,23 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime
 
-# Ruta al archivo ANN
 file_ann = 'notebooks/4F_ANN/unids_DM_std_proba_check_repeated_kfold_rskf_4F_21.txt'
 unids_ann_raw = np.genfromtxt(file_ann, dtype='str')
 unids_ann_data = np.asarray(unids_ann_raw[1:], dtype=float)
 
-# Preparar columnas
 n_samples = unids_ann_data.shape[1] - 1
 columns = ['number'] + [f'prob_{i}' for i in range(n_samples)]
 df_ann_full = pd.DataFrame(unids_ann_data, columns=columns)
 
-# Agrupar y calcular media por UNID
 df_ann_mean = df_ann_full.groupby('number').mean().reset_index()
 df_ann_mean['prob_ann'] = df_ann_mean[[f'prob_{i}' for i in range(n_samples)]].mean(axis=1)
 df_ann_final = df_ann_mean[['number', 'prob_ann']]
 
-# Cargar tus resultados
 file_rf = 'outputs/predictions/unids_predictions_2025-03-19_12-56-02.csv'
 df_rf = pd.read_csv(file_rf)
 
-# Unir ambos DataFrames
 merged = pd.merge(df_rf, df_ann_final, on='number')
 
-# Filtrar por probabilidad alta en ambos modelos
 both_high = merged[(merged['prob_DM'] > 0.90) & (merged['prob_ann'] > 0.90)]
 
 print(f"Total UNIDs clasificadas como DM por ambos modelos (>0.90): {len(both_high)}")
@@ -64,3 +58,8 @@ bar_path = f'outputs/compare/prob_candidatas_bar.png'
 plt.savefig(bar_path, dpi=300)
 plt.close()
 print(f"Bar plot guardado: {bar_path}")
+
+# --- 3. Guardar candidatas comunes RF-ANN ---
+rf_ann_candidates_path = 'outputs/compare/rf_ann_candidates.csv'
+both_high.to_csv(rf_ann_candidates_path, index=False)
+print(f"Candidatas RF-ANN guardadas en: {rf_ann_candidates_path}")
