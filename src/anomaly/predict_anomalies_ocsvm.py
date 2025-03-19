@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 # archivo de datos de test: data/raw/unids_3F_beta_err_names.txt
 # modelo entrenado: outputs/models/ocsvm_astro_model.joblib
 # scaler: outputs/models/scaler_astro.joblib
-# archivo de salida: outputs/predictions/anomalies_ocsvm_astro.txt
+# ubicación de archivos de salida: outputs/anomalies/
 
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 
@@ -45,7 +45,7 @@ df_test['anomaly_score'] = anomaly_scores
 
 # Visualizar la distribución de scores de anomalía
 plt.figure(figsize=(8, 5))
-plt.hist(df_test['anomaly_score'], bins=30, edgecolor='black')
+plt.hist(df_test['anomaly_score'], bins=30, edgecolor='blue',  color='pink')
 plt.xlabel('Score de Anomalía (OCSVM)')
 plt.ylabel('Cantidad de UNIDs')
 plt.title('Distribución de Scores de Anomalía - UNIDs')
