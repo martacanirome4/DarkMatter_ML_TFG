@@ -1,0 +1,23 @@
+=== Random Forest - Clasificación Astro vs DM ===
+Timestamp: 2025-03-19_12-36-44
+
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.93      0.90      0.92       567
+         1.0       0.91      0.93      0.92       566
+
+    accuracy                           0.92      1133
+   macro avg       0.92      0.92      0.92      1133
+weighted avg       0.92      0.92      0.92      1133
+
+Confusion Matrix:
+[[513  54]
+ [ 40 526]]
+
+ROC AUC Score: 0.9783
+
+Gráficos generados:
+- Matriz de Confusión: /Users/martacaninoromero/DarkMatter_ML_TFG/outputs/images/confusion_matrix_rf_2025-03-19_12-36-44.png
+- Curva ROC: /Users/martacaninoromero/DarkMatter_ML_TFG/outputs/images/roc_curve_rf_2025-03-19_12-36-44.png
+- Importancia Variables: /Users/martacaninoromero/DarkMatter_ML_TFG/outputs/images/feature_importance_rf_2025-03-19_12-36-44.png
