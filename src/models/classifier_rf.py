@@ -17,10 +17,10 @@ def load_data(filepath):
     df_file = os.path.join(project_root, 'data', 'raw', 'XY_bal_log_Rel.txt')
 
     if not os.path.exists(df_file):
-        print(f"❌ Archivo no encontrado: {df_file}")
+        print(f"Archivo no encontrado: {df_file}")
         return None, None
     else:
-        print(f"✅ Cargando archivo: {df_file}")
+        print(f"Cargando archivo: {df_file}")
         df = pd.read_csv(df_file, sep='\s+')
 
     X = df[['E_peak', 'beta', 'sigma', 'beta_Rel']]
@@ -130,7 +130,7 @@ def main():
     # Guardar modelo entrenado
     model_path = os.path.join(output_dir, f'rf_model_{timestamp}.joblib')
     joblib.dump(clf, model_path)
-    print(f"✅ Modelo guardado en: {model_path}")
+    print(f"Modelo guardado en: {model_path}")
 
 if __name__ == '__main__':
     main()
