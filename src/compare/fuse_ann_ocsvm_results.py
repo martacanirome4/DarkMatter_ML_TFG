@@ -31,7 +31,11 @@ latest_anomaly_file = os.path.join(anomaly_dir, anomaly_csv_files[0])
 df_anomaly = pd.read_csv(latest_anomaly_file)
 print(f"Archivo de anomalías cargado: {latest_anomaly_file}")
 
-merged = pd.merge(df_ann[['number', 'prob_ann']], df_anomaly[['number', 'anomaly_score']], on='number')
+# Agrupar por 'number' y hacer la media de prob_ann si hay duplicados
+df_ann_grouped = df_ann.groupby('number', as_index=False)['prob_ann'].mean()
+
+# Fusionar con anomaly_score
+merged = pd.merge(df_ann_grouped, df_anomaly[['number', 'anomaly_score']], on='number')
 
 # === Normalizar anomaly_score ===
 scaler = MinMaxScaler()
@@ -79,7 +83,8 @@ print(f"Scatter plot guardado: {scatter_path}")
 # === Bar plot Top 10 ===
 top10 = merged_sorted.head(10)
 plt.figure(figsize=(10, 6))
-bars = plt.bar(top10['number'].astype(str), top10['combined_score'], color='#2c7fb8', edgecolor='black')
+colors = plt.cm.viridis(top10['combined_score'] / top10['combined_score'].max())
+bars = plt.bar(top10['number'].astype(str), top10['combined_score'], color=colors, edgecolor='black')
 plt.xlabel('ID Fuente UNID', fontsize=12)
 plt.ylabel('Score Combinado', fontsize=12)
 plt.title(f'Top 10 Candidatas DM (ANN + Anomalía)\n{timestamp}', fontsize=14, weight='bold')
