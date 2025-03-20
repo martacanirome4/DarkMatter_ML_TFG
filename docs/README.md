@@ -2,7 +2,7 @@
 
 **🚀 Identificación de posibles fuentes de materia oscura (DM) entre fuentes no identificadas (UNIDs) del catálogo Fermi-LAT de la NASA, usando machine learning supervisado y detección de anomalías.**
 
-![Fermi Gamma-Ray Sky](https://cdn.mos.cms.futurecdn.net/Y9AvAXoJ1i8LJIYurx8kRi-970-80.jpg.webp)
+![gammaray](https://github.com/user-attachments/assets/5078f5bc-c02c-4f11-965b-705af6074f52)
 
 > Imagen: Mapa del cielo en rayos gamma, obtenido por el telescopio Fermi-LAT – Fuente: NASA/DOE/Fermi LAT Collaboration (vía [Space.com](https://www.space.com/22466-nasa-fermi-telescope-photos-gamma-rays.html))
 
