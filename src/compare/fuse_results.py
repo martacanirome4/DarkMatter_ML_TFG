@@ -1,6 +1,6 @@
 # Combinar la probabilidad de DM del modelo RandomForest (validado por ANN) con el score de anomalía del modelo OCSVM
 # para obtener un score combinado que permita priorizar las fuentes más anómalas y con mayor probabilidad de ser materia oscura.
-# fuse_results.py
+# src/compare/fuse_results.py
 
 import pandas as pd
 import os

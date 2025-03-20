@@ -1,0 +1,12 @@
+=== Comparación RF vs ANN - UNIDs ===
+Timestamp: 2025-03-20_13-54-09
+
+Total UNIDs procesadas: 1125
+Candidatas comunes RF y ANN (prob > 0.90): 2
+
+Gráficos generados:
+- Scatter Plot: None
+- Bar Plot: None
+- Histograma Comparativo: /Users/martacaninoromero/DarkMatter_ML_TFG/outputs/compare/hist_comparativo_rf_ann_2025-03-20_13-54-09.png
+
+CSV de candidatas: None

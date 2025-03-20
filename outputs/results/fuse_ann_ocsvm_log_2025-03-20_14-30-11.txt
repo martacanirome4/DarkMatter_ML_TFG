@@ -1,0 +1,8 @@
+=== Fusión ANN + OCSVM ===
+Timestamp: 2025-03-20_14-30-11
+
+Total UNIDs procesadas: 5625
+Ranking combinado guardado en: /Users/martacaninoromero/DarkMatter_ML_TFG/outputs/results/unids_combined_ann_ocsvm_2025-03-20_14-30-11.csv
+Scatter plot: /Users/martacaninoromero/DarkMatter_ML_TFG/outputs/results/scatter_ann_vs_anomaly_2025-03-20_14-30-11.png
+Bar plot Top 10: /Users/martacaninoromero/DarkMatter_ML_TFG/outputs/results/top10_combined_ann_ocsvm_2025-03-20_14-30-11.png
+Fuente de anomalías: /Users/martacaninoromero/DarkMatter_ML_TFG/outputs/anomalies/anomalies_ocsvm_astro_2025-03-20_14-17-58.csv

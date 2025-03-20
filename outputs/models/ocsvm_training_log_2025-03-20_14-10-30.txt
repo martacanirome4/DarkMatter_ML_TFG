@@ -1,0 +1,13 @@
+=== Entrenamiento One-Class SVM - Anomalías ASTRO ===
+Timestamp: 2025-03-20_14-10-30
+
+Total fuentes ASTRO usadas: 2831
+Parámetros del modelo:
+- Kernel: rbf
+- Gamma: scale
+- Nu (proporción de anomalías esperadas): 0.05
+
+Archivos generados:
+- Modelo OCSVM: /Users/martacaninoromero/DarkMatter_ML_TFG/outputs/models/ocsvm_astro_model_2025-03-20_14-10-30.joblib
+- Scaler: /Users/martacaninoromero/DarkMatter_ML_TFG/outputs/models/scaler_astro_2025-03-20_14-10-30.joblib
+- Histograma de puntuaciones: /Users/martacaninoromero/DarkMatter_ML_TFG/outputs/models/ocsvm_scores_hist_2025-03-20_14-10-30.png
