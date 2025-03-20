@@ -11,7 +11,7 @@
 ## 🌌 Motivación
 
 El telescopio espacial Fermi-LAT detecta rayos gamma, y muchas de sus fuentes aún no están clasificadas. Si la materia oscura está formada por WIMPs (partículas masivas de interacción débil), es posible que parte de estas **UNIDs** tenga origen en **procesos de aniquilación de DM**.  
-Este proyecto explora cómo **ML** puede ayudar a identificar candidatas, mezclando ciencia, tecnología y pasión por el universo. 🌠
+Este proyecto explora cómo **ML** puede ayudar a identificar candidatas, mezclando ciencia y tecnología.
 
 ---
 
@@ -35,11 +35,11 @@ El enfoque combina **clasificación supervisada** + **detección de anomalías**
 
 ## 🛰️ Curiosidades Astrofísicas y Tecnológicas
 
-- **Materia Oscura** compone ~27% del universo, pero no emite luz. Solo se detecta por su influencia gravitatoria. 😱
+- **Materia Oscura** compone ~27% del universo, pero no emite luz. Solo se detecta por su influencia gravitatoria.
 - Las WIMPs son candidatas a DM → podrían generar rayos gamma si se aniquilan, y **Fermi-LAT** busca justamente eso.
 - **Fermi-LAT** es un satélite lanzado por NASA en 2008, especializado en detectar rayos gamma de alta energía.
 - En ML, este campo se llama **astroinformática**: datos masivos + inteligencia artificial para estudiar el cosmos. 💫🧠
-- El reto es que la **DM no tiene etiqueta**: aquí entra la detección de anomalías, ¡para cazar lo desconocido!
+- El reto es que la **DM no tiene etiqueta**: aquí entra la detección de anomalías.
 
 ---
 
@@ -86,7 +86,7 @@ pip install -r requirements.txt
 
 ## ✍️ Autoría
 
-Desarrollado con mucha ilusión por:  
+Desarrollado por:  
 **Marta Canino Romero** – TFG Ingeniería Informática 2025  
 Universidad CEU San Pablo, Madrid 🇪🇸  
 [GitHub](https://github.com/martacanirome4)
