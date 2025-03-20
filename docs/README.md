@@ -2,7 +2,9 @@
 
 **🚀 Identificación de posibles fuentes de materia oscura (DM) entre fuentes no identificadas (UNIDs) del catálogo Fermi-LAT de la NASA, usando machine learning supervisado y detección de anomalías.**
 
-![darkmatter](https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Dark_Matter_Map.jpg/640px-Dark_Matter_Map.jpg)
+![Fermi Gamma-Ray Sky](https://cdn.mos.cms.futurecdn.net/Y9AvAXoJ1i8LJIYurx8kRi-970-80.jpg.webp)
+
+> Imagen: Mapa del cielo en rayos gamma, obtenido por el telescopio Fermi-LAT – Fuente: NASA/DOE/Fermi LAT Collaboration (vía [Space.com](https://www.space.com/22466-nasa-fermi-telescope-photos-gamma-rays.html))
 
 ---
 
@@ -35,7 +37,7 @@ El enfoque combina **clasificación supervisada** + **detección de anomalías**
 
 - **Materia Oscura** compone ~27% del universo, pero no emite luz. Solo se detecta por su influencia gravitatoria. 😱
 - Las WIMPs son candidatas a DM → podrían generar rayos gamma si se aniquilan, y **Fermi-LAT** busca justamente eso.
-- **Fermi-LAT** es un satélite lanzado por NASA en 2008, especializado en detectar rayos gamma de alta energía. ¡Es como un escáner del universo en HD!
+- **Fermi-LAT** es un satélite lanzado por NASA en 2008, especializado en detectar rayos gamma de alta energía.
 - En ML, este campo se llama **astroinformática**: datos masivos + inteligencia artificial para estudiar el cosmos. 💫🧠
 - El reto es que la **DM no tiene etiqueta**: aquí entra la detección de anomalías, ¡para cazar lo desconocido!
 
@@ -84,7 +86,7 @@ pip install -r requirements.txt
 
 ## ✍️ Autoría
 
-Desarrollado por:  
+Desarrollado con mucha ilusión por:  
 **Marta Canino Romero** – TFG Ingeniería Informática 2025  
 Universidad CEU San Pablo, Madrid 🇪🇸  
 [GitHub](https://github.com/martacanirome4)
@@ -96,3 +98,4 @@ Universidad CEU San Pablo, Madrid 🇪🇸
 - Visualización gráfica de anomalías y clusters de fuentes.
 - Análisis espectral profundo por tipo de fuente.
 - Aplicación web para explorar predicciones interactivamente.
+- 
