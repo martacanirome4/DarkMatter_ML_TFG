@@ -1,128 +1,98 @@
 # 💫 Detección de Materia Oscura en Datos del Telescopio Fermi-LAT
 
+**🚀 Identificación de posibles fuentes de materia oscura (DM) entre fuentes no identificadas (UNIDs) del catálogo Fermi-LAT de la NASA, usando machine learning supervisado y detección de anomalías.**
 
-Este proyecto tiene como objetivo identificar **posibles fuentes de materia oscura** dentro del conjunto de **fuentes no identificadas (UNIDs)** del catálogo **Fermi-LAT** de la NASA, mediante técnicas de **aprendizaje automático supervisado y detección de anomalías**.
-
----
-
-## 🎯 Objetivo del Estudio
-Desarrollar e implementar modelos que permitan distinguir entre fuentes astrofísicas conocidas y posibles señales de materia oscura, utilizando características espectrales extraídas de los datos del telescopio Fermi-LAT.  
-El enfoque combina **clasificación supervisada** y **detección de novedades (novelty detection)** para lograr una identificación robusta de candidatas.
+![darkmatter](https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Dark_Matter_Map.jpg/640px-Dark_Matter_Map.jpg)
 
 ---
 
-## Motivación
-El catálogo Fermi-LAT contiene miles de fuentes gamma, muchas de las cuales aún no han sido identificadas. Si la materia oscura está compuesta por partículas masivas de interacción débil (WIMPs), un subconjunto de estas fuentes no identificadas podría originarse en procesos de aniquilación de DM. Esta tesis explora cómo el uso de machine learning, potenciado por características sistemáticas derivadas de datos observacionales, puede ayudar a identificar candidatas a materia oscura entre estas fuentes.
+## 🌌 Motivación
+
+El telescopio espacial Fermi-LAT detecta rayos gamma, y muchas de sus fuentes aún no están clasificadas. Si la materia oscura está formada por WIMPs (partículas masivas de interacción débil), es posible que parte de estas **UNIDs** tenga origen en **procesos de aniquilación de DM**.  
+Este proyecto explora cómo **ML** puede ayudar a identificar candidatas, mezclando ciencia, tecnología y pasión por el universo. 🌠
 
 ---
 
-## 🧩 Metodología
+## 🎯 Objetivo
 
-1. **Clasificación Supervisada (Random Forest)**  
-   Entrenado sobre fuentes astrofísicas identificadas y simulaciones de materia oscura → asigna **probabilidad de ser DM** a cada fuente UNID.
-
-2. **Validación Cruzada con Red Neuronal (ANN)**  
-   Comparación de resultados del modelo RF con un modelo ANN de un estudio previo → intersección de candidatas.
-
-3. **Detección de Anomalías (One-Class SVM)**  
-   Entrenado solo sobre fuentes astrofísicas → calcula **índice de anomalía** de cada fuente UNID.
-
-4. **Fusión de Resultados**  
-   Combinación de **probabilidad de materia oscura** y **anomalía** para determinar las candidatas más probables a ser fuentes de materia oscura.
+Desarrollar modelos que distingan entre fuentes astrofísicas y posibles señales de DM, usando características espectrales derivadas del catálogo Fermi-LAT.  
+El enfoque combina **clasificación supervisada** + **detección de anomalías**, y **fusión de resultados**.
 
 ---
 
-## ⚙️ Requisitos
+## 🧩 Metodología (Resumen Visual)
 
-- Python 3.x
-- Entorno virtual recomendado (`.venv`)
-- Librerías clave: `scikit-learn`, `numpy`, `pandas`, `matplotlib`, `seaborn`, `joblib`
+| Técnica                  | Objetivo                                    | Herramienta         |
+|-------------------------|---------------------------------------------|---------------------|
+| Random Forest (RF)      | Asignar probabilidad de ser DM              | scikit-learn        |
+| Red Neuronal (ANN)      | Validar RF con resultados de otro estudio   | Código externo ANN  |
+| One-Class SVM (OCSVM)   | Calcular anomalía de cada UNID              | scikit-learn        |
+| Fusión RF + OCSVM       | Determinar candidatas con alta probabilidad | Modelos combinados  |
 
-Instalar requisitos:
+---
+
+## 🛰️ Curiosidades Astrofísicas y Tecnológicas
+
+- **Materia Oscura** compone ~27% del universo, pero no emite luz. Solo se detecta por su influencia gravitatoria. 😱
+- Las WIMPs son candidatas a DM → podrían generar rayos gamma si se aniquilan, y **Fermi-LAT** busca justamente eso.
+- **Fermi-LAT** es un satélite lanzado por NASA en 2008, especializado en detectar rayos gamma de alta energía. ¡Es como un escáner del universo en HD!
+- En ML, este campo se llama **astroinformática**: datos masivos + inteligencia artificial para estudiar el cosmos. 💫🧠
+- El reto es que la **DM no tiene etiqueta**: aquí entra la detección de anomalías, ¡para cazar lo desconocido!
+
+---
+
+## ⚙️ Requisitos Rápidos
+
 ```bash
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
 ---
 
-## Estructura del Proyecto
-```bash
-DarkMatter_ML_TFG/
-│
-├── data/
-│   ├── raw/
-│   │   ├── XY_bal_log_Rel.txt                  # Datos etiquetados (astro + DM simulada)
-│   │   ├── unids_3F_beta_err_names.txt         # Datos de fuentes UNIDs
-│   │   └── unids_DM_std_proba_...txt           # Resultados previos ANN
-│   ├── processed/                              # Datos procesados para modelos
-│   ├── 4GL_catalog/                            # Otros catálogos de referencia
-│   └── results/                                # Resultados generados por modelos
-│
-├── docs/
-│   └── references/                             # Documentación y fuentes bibliográficas
-│
-├── notebooks/
-│   ├── 4F_ANN/                                 # Notebook ANN previo
-│   ├── unids/                                  # Análisis de fuentes UNIDs
-│   └── XY_bal_log_Rel/                         # EDA y análisis de datos etiquetados
-│
-├── outputs/
-│   ├── predictions/                            # Predicciones sobre UNIDs
-│   ├── compare/                                # Comparación RF vs ANN
-│   ├── anomalies/                              # Resultados anomalías
-│   └── models/                                 # Modelos entrenados (RF, OCSVM)
-│
-├── src/
-│   ├── models/
-│   │   └── classifier_rf.py                    # Entrena y aplica Random Forest
-│   ├── predict/
-│   │   └── predict_unids.py                    # Aplica RF a UNIDs
-│   ├── compare/
-│   │   └── compare_rf_ann_unids.py             # Comparación RF vs ANN
-│   └── anomaly/
-│       └── detect_anomalies_ocsvm.py           # Detección de anomalías (One-Class SVM)
-│
-├── requirements.txt
-└── README.md
-```
+## 🚀 Ejecución de Scripts
+
+- 🧠 Entrenar modelo RF y aplicar a UNIDs:
+  ```bash
+  python src/models/classifier_rf.py
+  ```
+- 🔍 Comparar con resultados ANN previos:
+  ```bash
+  python src/compare/compare_rf_ann_unids.py
+  ```
+- 🚨 Detección de anomalías (OCSVM):
+  ```bash
+  python src/anomaly/detect_anomalies_ocsvm.py
+  ```
 
 ---
 
-## 🚀 Cómo ejecutar scripts
-1. **Activar entorno virtual:**  
-    ```bash
-    source .venv/bin/activate
-    ```
-2. **Entrenar Random Forest + aplicar a UNIDs:**  
-    ```bash
-    python src/models/classifier_rf.py
-    ```
-3. **Comparar resultados con ANN:**  
-    ```bash
-    python src/compare/compare_rf_ann_unids.py
-    ```
-4. **Detección de anomalías (One-Class SVM)::**  
-    ```bash
-    python src/anomaly/detect_anomalies_ocsvm.py
-    ```
+## 📚 Recursos Científicos
+
+- 📄 Estudio ANN original:  
+  *Gammaldi et al. (2023), MNRAS*  
+  [Artículo completo](https://academic.oup.com/mnras/article/520/1/1348/6987092)
+
+- 🔭 Catálogo Fermi-LAT NASA:  
+  [Acceso oficial](https://fermi.gsfc.nasa.gov/ssc/data/access/)
+
+- 💻 Código ANN original:  
+  [ViviGamma/Fermi_LAT_unids_NN](https://github.com/ViviGamma/Fermi_LAT_unids_NN)
 
 ---
 
-## 📚 Créditos y Recursos
+## ✍️ Autoría
 
-- Catálogo Fermi-LAT NASA: [Enlace oficial](https://fermi.gsfc.nasa.gov/ssc/data/access/)
-- Estudio original ANN:  
-  *Gammaldi, V., Zaldívar, B., Sánchez-Conde, M. A., & Coronado-Blázquez, J. (2023). A search for dark matter among Fermi-LAT unidentified sources with systematic features in machine learning.*  
-  [MNRAS, 520(1), 1348–1365](https://academic.oup.com/mnras/article/520/1/1348/6987092)
-- Repositorio código ANN original:  
-  [https://github.com/ViviGamma/Fermi_LAT_unids_NN](https://github.com/ViviGamma/Fermi_LAT_unids_NN)
-- Desarrollado por: **Marta Canino Romero** – TFG Ingeniería Informática 2025 (Universidad CEU San Pablo, Madrid)
+Desarrollado por:  
+**Marta Canino Romero** – TFG Ingeniería Informática 2025  
+Universidad CEU San Pablo, Madrid 🇪🇸  
+[GitHub](https://github.com/martacanirome4)
 
 ---
 
-## Referencias
-Repositorio Original en GitHub:
-ViviGamma/Fermi_LAT_unids_NN
-Este repositorio proporciona el código original y la metodología en la que se basa este proyecto.
+## 🌠 Futuras Mejoras
 
----
+- Visualización gráfica de anomalías y clusters de fuentes.
+- Análisis espectral profundo por tipo de fuente.
+- Aplicación web para explorar predicciones interactivamente.
