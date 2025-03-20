@@ -2,9 +2,9 @@
 
 **🚀 Identificación de posibles fuentes de materia oscura (DM) entre fuentes no identificadas (UNIDs) del catálogo Fermi-LAT de la NASA, usando machine learning supervisado y detección de anomalías.**
 
-![gammaray](https://github.com/user-attachments/assets/5078f5bc-c02c-4f11-965b-705af6074f52)
+![galactic_haze_Fermi](https://github.com/user-attachments/assets/5a258831-133b-43bf-b4fd-4bc7c17b7206)
 
-> Imagen: Mapa del cielo en rayos gamma, obtenido por el telescopio Fermi-LAT – Fuente: NASA/DOE/Fermi LAT Collaboration (vía [Space.com](https://www.space.com/22466-nasa-fermi-telescope-photos-gamma-rays.html))
+> Imagen: Bruma galáctica vista por Planck y 'burbujas' galácticas vistas por Fermi, obtenido por el telescopio Fermi-LAT – Fuente: NASA/DOE/Fermi LAT Collaboration (vía [Space.com](https://www.space.com/22466-nasa-fermi-telescope-photos-gamma-rays.html))
 
 ---
 
