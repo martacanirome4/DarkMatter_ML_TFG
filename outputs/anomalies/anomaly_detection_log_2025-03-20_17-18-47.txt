@@ -1,0 +1,14 @@
+=== Detección de Anomalías - UNIDs ===
+Timestamp: 2025-03-20_17-18-47
+
+Total fuentes UNIDs analizadas: 1125
+Anomalías detectadas: 1125
+Porcentaje anomalías: 100.00%
+
+Archivos generados:
+- Resultados CSV: /Users/martacaninoromero/DarkMatter_ML_TFG/outputs/anomalies/anomalies_ocsvm_astro_2025-03-20_17-18-47.csv
+- Histograma de scores: /Users/martacaninoromero/DarkMatter_ML_TFG/outputs/anomalies/anomaly_score_distribution_2025-03-20_17-18-47.png
+
+Modelo usado:
+- Modelo OCSVM: /Users/martacaninoromero/DarkMatter_ML_TFG/outputs/models/ocsvm_astro_model_2025-03-20_17-15-29.joblib
+- Scaler: /Users/martacaninoromero/DarkMatter_ML_TFG/outputs/models/scaler_astro_2025-03-20_17-15-29.joblib

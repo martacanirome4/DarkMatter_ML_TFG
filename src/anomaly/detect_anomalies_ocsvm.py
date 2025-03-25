@@ -26,9 +26,15 @@ scaler = StandardScaler()
 X_astro_scaled = scaler.fit_transform(X_astro)
 
 # === Entrenamiento One-Class SVM ===
-ocsvm = OneClassSVM(kernel='rbf', gamma='scale', nu=0.05)
+ocsvm = OneClassSVM(kernel='rbf', gamma='scale', nu=0.5)
 ocsvm.fit(X_astro_scaled)
 print("Modelo One-Class SVM entrenado con datos ASTRO")
+
+# Imprimir cabecera con comprobación de los datos en los que se entrena
+print(df_astro.head())
+print(df_astro.describe())
+
+# Hacer grafica con frontera
 
 timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 model_dir = os.path.join(project_root, 'outputs', 'models')
