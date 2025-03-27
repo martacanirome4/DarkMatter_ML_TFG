@@ -26,10 +26,9 @@ El enfoque combina **clasificación supervisada** + **detección de anomalías**
 
 | Técnica                  | Objetivo                                    | Herramienta         |
 |-------------------------|---------------------------------------------|---------------------|
-| Random Forest (RF)      | Asignar probabilidad de ser DM              | scikit-learn        |
 | Red Neuronal (ANN)      | Validar RF con resultados de otro estudio   | Código externo ANN  |
 | One-Class SVM (OCSVM)   | Calcular anomalía de cada UNID              | scikit-learn        |
-| Fusión RF + OCSVM       | Determinar candidatas con alta probabilidad | Modelos combinados  |
+| Fusión ANN + OCSVM       | Determinar candidatas con alta probabilidad | Modelos combinados  |
 
 ---
 
