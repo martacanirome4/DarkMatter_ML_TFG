@@ -22,7 +22,7 @@ El enfoque combina **clasificación supervisada** + **detección de anomalías**
 
 ---
 
-## 🧩 Metodología (Resumen Visual)
+## ⚙️ Metodología
 
 | Técnica                  | Objetivo                                    | Herramienta         |
 |-------------------------|---------------------------------------------|---------------------|
