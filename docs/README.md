@@ -42,33 +42,6 @@ El enfoque combina **clasificación supervisada** + **detección de anomalías**
 
 ---
 
-## ⚙️ Requisitos Rápidos
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
----
-
-## 🚀 Ejecución de Scripts
-
-- 🧠 Entrenar modelo RF y aplicar a UNIDs:
-  ```bash
-  python src/models/classifier_rf.py
-  ```
-- 🔍 Comparar con resultados ANN previos:
-  ```bash
-  python src/compare/compare_rf_ann_unids.py
-  ```
-- 🚨 Detección de anomalías (OCSVM):
-  ```bash
-  python src/anomaly/detect_anomalies_ocsvm.py
-  ```
-
----
-
 ## 📚 Recursos Científicos
 
 - 📄 Estudio ANN original:  
@@ -89,12 +62,3 @@ Desarrollado por:
 **Marta Canino Romero** – TFG Ingeniería Informática 2025  
 Universidad CEU San Pablo, Madrid 🇪🇸  
 [GitHub](https://github.com/martacanirome4)
-
----
-
-## 🌠 Futuras Mejoras
-
-- Visualización gráfica de anomalías y clusters de fuentes.
-- Análisis espectral profundo por tipo de fuente.
-- Aplicación web para explorar predicciones interactivamente.
-- 
