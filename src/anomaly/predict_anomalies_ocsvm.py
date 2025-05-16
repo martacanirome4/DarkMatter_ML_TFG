@@ -67,7 +67,7 @@ def main():
 
     ocsvm, scaler, model_path, scaler_path = load_latest_ocsvm_and_scaler()
 
-    # === Normalizar datos UNIDs ===
+    # === Escalar datos UNIDs ===
     X_test_scaled = scaler.transform(X_test)
 
     # === Predecir anomalías y obtener scores ===
