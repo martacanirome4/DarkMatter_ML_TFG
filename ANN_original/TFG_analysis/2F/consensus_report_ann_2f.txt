@@ -1,0 +1,44 @@
+
+================================================================================
+REPORTE DE CONSENSO - MODELO ANN 2F (3 EJECUCIONES)
+================================================================================
+
+PARÁMETROS DEL ANÁLISIS:
+- Número de fuentes analizadas: 1125
+- Número de ejecuciones independientes: 3
+- Validación cruzada por ejecución: 5 folds × 2 repeticiones = 10 evaluaciones
+
+ESTABILIDAD DEL MODELO:
+- Correlación promedio entre ejecuciones: 0.9986 ± 0.0005
+- Concordancia de rankings (Kendall's τ): -0.0246
+- Coeficiente de variación promedio: 0.0199
+- Fuentes con baja variabilidad (<0.10): 1125 (100.0%)
+
+ESTADÍSTICAS DE CONSENSO:
+- Probabilidad media general: 0.2839 ± 0.0753
+- Variabilidad media entre ejecuciones: 0.0051
+- Rango de probabilidades: [0.0243, 0.5084]
+
+CANDIDATOS ROBUSTOS:
+- Candidatos con criterios múltiples: 10
+- Candidatos en top 20 de todas las ejecuciones: 5
+- Candidatos en top 20 de al menos 2 ejecuciones: 17
+
+TOP 10 CANDIDATOS DE CONSENSO:
+--------------------------------------------------
+Source   96: p=0.5084±0.0220 (F_peak=8.262e+00, beta=0.1120)
+Source  110: p=0.4993±0.0300 (F_peak=3.432e-01, beta=0.3537)
+Source   75: p=0.4803±0.0254 (F_peak=8.363e-01, beta=0.4803)
+Source   33: p=0.4724±0.0197 (F_peak=1.080e+01, beta=0.3954)
+Source  785: p=0.4637±0.0212 (F_peak=7.870e-01, beta=0.2986)
+Source   67: p=0.4612±0.0191 (F_peak=6.462e+00, beta=0.1658)
+Source 1010: p=0.4556±0.0172 (F_peak=5.872e+01, beta=0.2163)
+Source  560: p=0.4535±0.0167 (F_peak=1.439e+00, beta=0.3499)
+Source  146: p=0.4525±0.0163 (F_peak=1.150e+01, beta=0.3400)
+Source  363: p=0.4518±0.0165 (F_peak=1.238e+00, beta=0.3505)
+
+
+INTERPRETACIÓN:
+- El modelo muestra alta correlación entre ejecuciones (r=0.999)
+- La variabilidad promedio de 0.005 indica alta estabilidad
+- Se identificaron 17 candidatos que aparecen consistentemente en rankings altos

@@ -11,9 +11,9 @@ ANALYSIS PARAMETERS:
 - Low uncertainty threshold: 0.1
 
 OVERALL STATISTICS:
-- Mean probability: 0.2749 ± 0.0728
-- Median probability: 0.2740
-- Mean uncertainty: 0.2315 ± 0.0478
+- Mean probability: 0.2824 ± 0.0755
+- Median probability: 0.2803
+- Mean uncertainty: 0.2351 ± 0.0500
 
 CANDIDATE SUMMARY:
 - Very High Confidence (≥95%): 0 sources
@@ -23,13 +23,13 @@ CANDIDATE SUMMARY:
 
 TOP 10 CANDIDATES:
 --------------------------------------------------
-Source 439: p=0.5239±0.3085 (E_peak=3.523e+00, beta=0.4710)
-Source 1114: p=0.4806±0.2945 (E_peak=1.294e+00, beta=0.3280)
-Source 438: p=0.4708±0.2347 (E_peak=5.112e-01, beta=0.2153)
-Source 363: p=0.4561±0.2528 (E_peak=1.238e+00, beta=0.3505)
-Source 996: p=0.4440±0.0854 (E_peak=5.916e-01, beta=0.2197)
-Source 300: p=0.4428±0.2154 (E_peak=3.543e+00, beta=0.1576)
-Source 138: p=0.4411±0.2486 (E_peak=4.593e-02, beta=0.0652)
-Source 423: p=0.4390±0.1585 (E_peak=1.436e+00, beta=0.3492)
-Source 975: p=0.4379±0.2262 (E_peak=5.083e-01, beta=0.3575)
-Source 213: p=0.4368±0.2671 (E_peak=4.236e-02, beta=0.0879)
+Source 214: p=0.5448±0.3143 (E_peak=3.499e+01, beta=0.1322)
+Source 1001: p=0.4979±0.3179 (E_peak=8.859e-01, beta=0.6109)
+Source 771: p=0.4832±0.0854 (E_peak=1.085e+00, beta=0.2694)
+Source 326: p=0.4818±0.3043 (E_peak=3.458e+01, beta=0.0970)
+Source 213: p=0.4816±0.2348 (E_peak=4.236e-02, beta=0.0879)
+Source 785: p=0.4744±0.3011 (E_peak=7.870e-01, beta=0.2986)
+Source 138: p=0.4726±0.2632 (E_peak=4.593e-02, beta=0.0652)
+Source 750: p=0.4698±0.2452 (E_peak=4.100e-01, beta=0.3088)
+Source 208: p=0.4532±0.1696 (E_peak=6.816e-01, beta=0.3424)
+Source 127: p=0.4525±0.1798 (E_peak=4.824e-02, beta=0.1380)
