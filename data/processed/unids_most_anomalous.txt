@@ -1,1 +1,1 @@
-E_peak	beta	sigma_det	beta_Rel	number	pred_labels	svm_score	prediction	Anomaly_Score	Anomaly_Rank(%)
+log(E_peak)	log(beta)	log(sigma_det)	log(beta_Rel)	number	pred_labels	svm_score	prediction	Anomaly_Score	Anomaly_Rank(%)
