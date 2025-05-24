@@ -1,0 +1,35 @@
+
+================================================================================
+REPORTE DE ANÁLISIS DE CANDIDATOS DE MATERIA OSCURA
+================================================================================
+
+PARÁMETROS DEL ANÁLISIS:
+- Total de fuentes no identificadas: 1125
+- Configuración de validación cruzada: 5 pliegues × 2 repeticiones = 10 evaluaciones totales
+- Umbral de alta confianza: 90%
+- Umbral de confianza moderada: 50%
+- Umbral de baja incertidumbre: 0.1
+
+ESTADÍSTICAS GENERALES:
+- Probabilidad media: 0.2960 ± 0.0771
+- Probabilidad mediana: 0.2923
+- Incertidumbre media: 0.2468 ± 0.0491
+
+RESUMEN DE CANDIDATOS:
+- Muy Alta Confianza (≥95%): 0 fuentes
+- Alta Confianza (≥90%): 0 fuentes
+- Confianza Moderada (50%-90%): 4 fuentes
+- Baja Incertidumbre (≤0.1): 9 fuentes
+
+TOP 10 CANDIDATOS:
+--------------------------------------------------
+Fuente 326: p=0.5353±0.3205 (E_peak=3.458e+01, beta=0.0970)
+Fuente 889: p=0.5348±0.3120 (E_peak=2.013e+00, beta=0.6167)
+Fuente 214: p=0.5020±0.3043 (E_peak=3.499e+01, beta=0.1322)
+Fuente 321: p=0.5008±0.0651 (E_peak=1.870e-01, beta=0.0418)
+Fuente 101: p=0.4905±0.3134 (E_peak=2.596e-02, beta=0.1263)
+Fuente 311: p=0.4832±0.1776 (E_peak=5.105e-04, beta=0.0725)
+Fuente 335: p=0.4804±0.2917 (E_peak=6.718e-01, beta=0.4090)
+Fuente 1094: p=0.4726±0.1885 (E_peak=6.731e+00, beta=0.0752)
+Fuente 258: p=0.4714±0.0658 (E_peak=4.927e-02, beta=0.0815)
+Fuente 327: p=0.4678±0.2677 (E_peak=7.335e-01, beta=0.2976)

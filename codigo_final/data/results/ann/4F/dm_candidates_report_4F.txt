@@ -1,0 +1,73 @@
+
+================================================================================
+REPORTE DE ANÁLISIS DE CANDIDATOS DE MATERIA OSCURA - ANN 4F
+================================================================================
+
+PARÁMETROS DEL ANÁLISIS:
+- Total de fuentes no identificadas: 1125
+- Características utilizadas: E_peak, beta, sigma_det, beta_Rel (4 características)
+- Configuración de validación cruzada: 5 splits × 1 repeats = 5 total folds
+- Umbral de alta confianza: 90%
+- Umbral de confianza moderada: 50%
+- Umbral de baja incertidumbre: 0.1
+
+ESTADÍSTICAS GENERALES:
+- Probabilidad media: 0.2226 ± 0.1250
+- Probabilidad mediana: 0.2097
+- Incertidumbre media: 0.2173 ± 0.1042
+- Rango de probabilidades: [0.0000, 0.8105]
+
+ESTADÍSTICAS DE CARACTERÍSTICAS:
+- Rango de E_peak: [2.355e-06, 2.950e+03]
+- Rango de Beta: [0.0024, 1.0000]
+- Rango de Sigma_det: [4.0556, 50.3083]
+- Rango de Beta_Rel: [0.0009, 74.9542]
+
+RESUMEN DE CANDIDATOS:
+- Muy Alta Confianza (≥95%): 0 fuentes
+- Alta Confianza (≥90%): 0 fuentes
+- Confianza Moderada (50%-90%): 28 fuentes
+- Baja Incertidumbre (≤0.1): 137 fuentes
+
+TOP 10 CANDIDATOS:
+--------------------------------------------------
+Source 821: p=0.8105±0.3568
+  E_peak=1.544e+00, beta=0.6922
+  sigma_det=9.8576, beta_Rel=0.3112
+
+Source 146: p=0.7639±0.3878
+  E_peak=1.150e+01, beta=0.3400
+  sigma_det=9.0474, beta_Rel=0.5353
+
+Source 371: p=0.7125±0.3585
+  E_peak=1.386e+01, beta=0.2306
+  sigma_det=5.0215, beta_Rel=0.9991
+
+Source 596: p=0.6930±0.3728
+  E_peak=1.271e+00, beta=0.4036
+  sigma_det=19.3727, beta_Rel=0.2309
+
+Source 1046: p=0.6058±0.4287
+  E_peak=1.371e+00, beta=0.3462
+  sigma_det=4.3628, beta_Rel=0.7048
+
+Source 1006: p=0.5886±0.2525
+  E_peak=3.582e-01, beta=0.3640
+  sigma_det=5.4401, beta_Rel=0.4775
+
+Source 847: p=0.5832±0.2935
+  E_peak=2.300e+01, beta=0.0929
+  sigma_det=7.6952, beta_Rel=0.8827
+
+Source 110: p=0.5611±0.4726
+  E_peak=3.432e-01, beta=0.3537
+  sigma_det=4.2845, beta_Rel=0.5553
+
+Source 1010: p=0.5556±0.4331
+  E_peak=5.872e+01, beta=0.2163
+  sigma_det=4.1131, beta_Rel=1.2963
+
+Source 781: p=0.5529±0.2376
+  E_peak=1.089e+00, beta=0.5408
+  sigma_det=6.4758, beta_Rel=0.4262
+

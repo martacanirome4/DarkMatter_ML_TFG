@@ -1,0 +1,53 @@
+
+============================================================
+REPORTE DE ANOMALY SCORING - OCSVM 4F
+============================================================
+
+PARÁMETROS DEL MODELO:
+- Kernel: RBF
+- Nu: 0.01
+- Gamma: 0.01
+- Características: Log(E_peak), Log(beta), Log(sigma_det), Log(beta_Rel)
+
+RESULTADOS:
+- Total UnIDs analizadas: 1,125
+- Outliers detectados: 8 (0.7%)
+- Inliers detectados: 1,117 (99.3%)
+
+ESTADÍSTICAS DE SCORES:
+- Decision Score promedio: 1.8414 ± 0.4099
+- Decision Score rango: [-1.7979, 2.5961]
+- Anomaly Rank promedio: 17.2% ± 9.3%
+
+TOP 5 CANDIDATOS MÁS ANÓMALOS:
+----------------------------------------
+1. ID: 307.0
+   Anomaly Rank: 100.0%
+   SVM Score: -1.7979
+   Log(E_peak): 1.510, Log(beta): 0.000
+   Log(sigma_det): 0.617, Log(beta_Rel): -3.046
+
+2. ID: 166.0
+   Anomaly Rank: 72.3%
+   SVM Score: -0.5791
+   Log(E_peak): 1.329, Log(beta): 0.000
+   Log(sigma_det): 0.637, Log(beta_Rel): -2.420
+
+3. ID: 1116.0
+   Anomaly Rank: 69.6%
+   SVM Score: -0.4619
+   Log(E_peak): 0.771, Log(beta): -2.620
+   Log(sigma_det): 0.747, Log(beta_Rel): 1.599
+
+4. ID: 285.0
+   Anomaly Rank: 69.4%
+   SVM Score: -0.4514
+   Log(E_peak): -0.747, Log(beta): -1.246
+   Log(sigma_det): 0.660, Log(beta_Rel): 1.875
+
+5. ID: 1109.0
+   Anomaly Rank: 68.0%
+   SVM Score: -0.3904
+   Log(E_peak): -5.628, Log(beta): -1.848
+   Log(sigma_det): 0.633, Log(beta_Rel): 0.839
+
