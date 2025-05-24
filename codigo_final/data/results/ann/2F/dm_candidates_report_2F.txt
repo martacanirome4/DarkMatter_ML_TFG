@@ -1,0 +1,35 @@
+
+================================================================================
+DARK MATTER CANDIDATE ANALYSIS REPORT
+================================================================================
+
+ANALYSIS PARAMETERS:
+- Total unidentified sources: 1125
+- Cross-validation setup: 5 splits × 2 repeats = 10 total folds
+- High confidence threshold: 90%
+- Moderate confidence threshold: 50%
+- Low uncertainty threshold: 0.1
+
+OVERALL STATISTICS:
+- Mean probability: 0.2831 ± 0.0757
+- Median probability: 0.2797
+- Mean uncertainty: 0.2365 ± 0.0507
+
+CANDIDATE SUMMARY:
+- Very High Confidence (≥95%): 0 sources
+- High Confidence (≥90%): 0 sources
+- Moderate Confidence (50%-90%): 3 sources
+- Low Uncertainty (≤0.1): 8 sources
+
+TOP 10 CANDIDATES:
+--------------------------------------------------
+Source 889: p=0.5137±0.3074 (E_peak=2.013e+00, beta=0.6167)
+Source 525: p=0.5053±0.2361 (E_peak=2.611e+00, beta=0.3131)
+Source 975: p=0.5032±0.2465 (E_peak=5.083e-01, beta=0.3575)
+Source 967: p=0.4969±0.2072 (E_peak=7.674e-01, beta=0.2984)
+Source 996: p=0.4941±0.1082 (E_peak=5.916e-01, beta=0.2197)
+Source 439: p=0.4768±0.2776 (E_peak=3.523e+00, beta=0.4710)
+Source 933: p=0.4707±0.1115 (E_peak=4.345e-01, beta=0.4125)
+Source 546: p=0.4689±0.1043 (E_peak=1.226e+00, beta=0.5375)
+Source 926: p=0.4675±0.1689 (E_peak=3.378e-01, beta=0.2123)
+Source 560: p=0.4590±0.2921 (E_peak=1.439e+00, beta=0.3499)
