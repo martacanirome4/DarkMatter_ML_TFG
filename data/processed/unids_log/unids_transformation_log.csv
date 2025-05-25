@@ -1,0 +1,5 @@
+variable,transformation,epsilon_used
+E_peak,log₁₀(E_peak),0
+beta,log₁₀(beta),0
+sigma_det,log₁₀(sigma_det),0
+beta_Rel,log₁₀(beta_Rel),0
