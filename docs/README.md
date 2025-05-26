@@ -81,16 +81,6 @@ DarkMatter_ML_TFG/
 
 ---
 
-## Herramientas de IA utilizadas
-
-Durante el desarrollo se utilizaron herramientas de IA generativa con fines asistenciales y no para implementación o análisis:
-
-- ChatGPT (OpenAI) — redacción técnica y revisión
-- Claude (Anthropic) — reformulación textual
-- GitHub Copilot — sugerencias de código en entorno VS Code
-
----
-
 ## Autoría
 
 Marta Canino Romero  
