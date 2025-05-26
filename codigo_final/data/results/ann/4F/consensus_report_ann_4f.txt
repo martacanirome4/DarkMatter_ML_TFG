@@ -5,71 +5,27 @@ REPORTE DE CONSENSO - MODELO ANN 4F (3 EJECUCIONES)
 
 PARÁMETROS DEL ANÁLISIS:
 - Número de fuentes analizadas: 1125
-- Características utilizadas: E_peak, beta, sigma_det, beta_Rel (4F)
+- Características utilizadas: E_peak, Beta, Sigma_det, Beta_Rel (4 características)
 - Número de ejecuciones independientes: 3
-- Validación cruzada por ejecución: 5 folds × 2 repeticiones = 10 evaluaciones
-
-ESTABILIDAD DEL MODELO:
-- Correlación promedio entre ejecuciones: 0.9990 ± 0.0003
-- Concordancia de rankings (Kendall's τ): 0.0397
-- Coeficiente de variación promedio: 0.0505
-- Fuentes con baja variabilidad (<0.10): 1125 (100.0%)
+- Validación cruzada por ejecución: 5 folds × 1 repetición = 5 evaluaciones
 
 ESTADÍSTICAS DE CONSENSO:
 - Probabilidad media general: 0.2271 ± 0.1249
 - Variabilidad media entre ejecuciones: 0.0081
 - Rango de probabilidades: [0.0000, 0.7846]
 
+ESTADÍSTICAS DE CARACTERÍSTICAS (4F):
+- E_peak: [2.355e-06, 2.950e+03]
+- Beta: [0.0024, 1.0000]
+- Sigma_det: [4.0556, 50.3083]
+- Beta_Rel: [0.0009, 74.9542]
+
 CANDIDATOS ROBUSTOS:
 - Candidatos con criterios múltiples: 53
 - Candidatos en top 20 de todas las ejecuciones: 3
 - Candidatos en top 20 de al menos 2 ejecuciones: 20
+- Candidatos consistentemente altos: 53
 
 TOP 10 CANDIDATOS DE CONSENSO:
 ----------------------------------------------------------------------
-Source  371: p=0.7846±0.0186
-  E_peak=1.386e+01, beta=0.2306
-  sigma_det=5.0215, beta_Rel=0.9991
-
-Source  821: p=0.7434±0.0512
-  E_peak=1.544e+00, beta=0.6922
-  sigma_det=9.8576, beta_Rel=0.3112
-
-Source  596: p=0.6715±0.0350
-  E_peak=1.271e+00, beta=0.4036
-  sigma_det=19.3727, beta_Rel=0.2309
-
-Source  556: p=0.6623±0.0317
-  E_peak=7.633e-02, beta=0.0593
-  sigma_det=4.2719, beta_Rel=1.4874
-
-Source  106: p=0.6245±0.0306
-  E_peak=1.389e+01, beta=0.1439
-  sigma_det=11.8161, beta_Rel=0.6108
-
-Source  172: p=0.6165±0.0253
-  E_peak=1.341e-01, beta=0.2563
-  sigma_det=5.5749, beta_Rel=1.1498
-
-Source   29: p=0.5969±0.0141
-  E_peak=6.143e+00, beta=0.7739
-  sigma_det=5.4138, beta_Rel=0.3990
-
-Source  560: p=0.5854±0.0066
-  E_peak=1.439e+00, beta=0.3499
-  sigma_det=13.1306, beta_Rel=0.3047
-
-Source  781: p=0.5789±0.0097
-  E_peak=1.089e+00, beta=0.5408
-  sigma_det=6.4758, beta_Rel=0.4262
-
-Source  622: p=0.5733±0.0109
-  E_peak=3.311e-01, beta=0.2370
-  sigma_det=4.4419, beta_Rel=0.8616
-
-
-INTERPRETACIÓN:
-- El modelo ANN 4F muestra alta correlación entre ejecuciones (r=0.999)
-- La variabilidad promedio de 0.008 indica alta estabilidad
-- Se identificaron 20 candidatos que aparecen consistentemente en rankings altos
-- Las características adicionales (sigma_det, beta_Rel) permiten una caracterización más detallada de los candidatos
+Source  371: p=0.7846±0.0186\n  E_peak=1.386e+01, Beta=0.2306\n  Sigma_det=5.0215, Beta_Rel=0.9991\n\nSource  821: p=0.7434±0.0512\n  E_peak=1.544e+00, Beta=0.6922\n  Sigma_det=9.8576, Beta_Rel=0.3112\n\nSource  596: p=0.6715±0.0350\n  E_peak=1.271e+00, Beta=0.4036\n  Sigma_det=19.3727, Beta_Rel=0.2309\n\nSource  556: p=0.6623±0.0317\n  E_peak=7.633e-02, Beta=0.0593\n  Sigma_det=4.2719, Beta_Rel=1.4874\n\nSource  106: p=0.6245±0.0306\n  E_peak=1.389e+01, Beta=0.1439\n  Sigma_det=11.8161, Beta_Rel=0.6108\n\nSource  172: p=0.6165±0.0253\n  E_peak=1.341e-01, Beta=0.2563\n  Sigma_det=5.5749, Beta_Rel=1.1498\n\nSource   29: p=0.5969±0.0141\n  E_peak=6.143e+00, Beta=0.7739\n  Sigma_det=5.4138, Beta_Rel=0.3990\n\nSource  560: p=0.5854±0.0066\n  E_peak=1.439e+00, Beta=0.3499\n  Sigma_det=13.1306, Beta_Rel=0.3047\n\nSource  781: p=0.5789±0.0097\n  E_peak=1.089e+00, Beta=0.5408\n  Sigma_det=6.4758, Beta_Rel=0.4262\n\nSource  622: p=0.5733±0.0109\n  E_peak=3.311e-01, Beta=0.2370\n  Sigma_det=4.4419, Beta_Rel=0.8616\n\n
