@@ -11,25 +11,25 @@ PARÁMETROS DEL ANÁLISIS:
 - Umbral de baja incertidumbre: 0.1
 
 ESTADÍSTICAS GENERALES:
-- Probabilidad media: 0.2828 ± 0.0764
-- Probabilidad mediana: 0.2797
-- Incertidumbre media: 0.2349 ± 0.0504
+- Probabilidad media: 0.2775 ± 0.0750
+- Probabilidad mediana: 0.2745
+- Incertidumbre media: 0.2338 ± 0.0506
 
 RESUMEN DE CANDIDATOS:
 - Muy Alta Confianza (≥95%): 0 fuentes
 - Alta Confianza (≥90%): 0 fuentes
-- Confianza Moderada (50%-90%): 3 fuentes
-- Baja Incertidumbre (≤0.1): 6 fuentes
+- Confianza Moderada (50%-90%): 2 fuentes
+- Baja Incertidumbre (≤0.1): 10 fuentes
 
 TOP 10 CANDIDATOS:
 --------------------------------------------------
-Fuente 889: p=0.5357±0.3064 (E_peak=2.013e+00, beta=0.6167)
-Fuente 551: p=0.5151±0.3163 (E_peak=1.209e+00, beta=0.2911)
-Fuente 1114: p=0.5077±0.3053 (E_peak=1.294e+00, beta=0.3280)
-Fuente 326: p=0.4849±0.3024 (E_peak=3.458e+01, beta=0.0970)
-Fuente 546: p=0.4737±0.0797 (E_peak=1.226e+00, beta=0.5375)
-Fuente 888: p=0.4695±0.2310 (E_peak=4.799e-01, beta=0.0567)
-Fuente 560: p=0.4683±0.2974 (E_peak=1.439e+00, beta=0.3499)
-Fuente 552: p=0.4583±0.2767 (E_peak=6.068e-01, beta=0.2390)
-Fuente 1113: p=0.4579±0.2294 (E_peak=8.890e+00, beta=0.0542)
-Fuente 536: p=0.4574±0.1703 (E_peak=7.394e-01, beta=0.3503)
+Fuente 1114: p=0.5292±0.3116 (E_peak=1.294e+00, beta=0.3280)
+Fuente 101: p=0.5074±0.3207 (E_peak=2.596e-02, beta=0.1263)
+Fuente 750: p=0.4742±0.2393 (E_peak=4.100e-01, beta=0.3088)
+Fuente 771: p=0.4718±0.1182 (E_peak=1.085e+00, beta=0.2694)
+Fuente 1113: p=0.4678±0.2308 (E_peak=8.890e+00, beta=0.0542)
+Fuente 551: p=0.4603±0.2965 (E_peak=1.209e+00, beta=0.2911)
+Fuente 742: p=0.4531±0.2145 (E_peak=3.250e-01, beta=0.2177)
+Fuente 110: p=0.4492±0.2792 (E_peak=3.432e-01, beta=0.3537)
+Fuente 785: p=0.4489±0.2916 (E_peak=7.870e-01, beta=0.2986)
+Fuente 1038: p=0.4450±0.2498 (E_peak=1.887e+00, beta=0.7190)
