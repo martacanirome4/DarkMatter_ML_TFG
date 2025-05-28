@@ -93,3 +93,6 @@ Universidad CEU San Pablo (Madrid, España) – TFG 2025
 ## Licencia
 
 Este repositorio se publica con fines académicos. Todo el contenido es original salvo donde se indique lo contrario.
+
+
+https://img.shields.io/github/actions/workflow/status/martacanirome4/DarkMatter_ML_TFG/ci.yml?branch=main
