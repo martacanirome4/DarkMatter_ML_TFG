@@ -6,7 +6,6 @@ Aplicación de técnicas de *Machine Learning* para la identificación de posibl
 
 [![CI](https://img.shields.io/github/actions/workflow/status/martacanirome4/DarkMatter_ML_TFG/ci.yml?branch=main)](https://github.com/martacanirome4/DarkMatter_ML_TFG/actions)
 [![Last commit](https://img.shields.io/github/last-commit/martacanirome4/DarkMatter_ML_TFG)](https://github.com/martacanirome4/dark-matter-api/commits/main)
-[![License](https://img.shields.io/github/license/martacanirome4/DarkMatter_ML_TFG)](LICENSE)
 ---
 
 ## Contexto científico
