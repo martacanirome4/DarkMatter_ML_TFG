@@ -4,7 +4,7 @@
 **Trabajo de Fin de Grado – Universidad CEU San Pablo (2025)**  
 Aplicación de técnicas de *Machine Learning* para la identificación de posibles señales de materia oscura en fuentes no identificadas del catálogo Fermi-LAT.
 
-[![CI](https://img.shields.io/github/actions/workflow/status/martacanirome4/DarkMatter_ML_TFG/ci.yml?branch=main)](https://github.com/martacanirome4/DarkMatter_ML_TFG/actions)
+[![CI](https://img.shields.io/github/actions/workflow/status/martacanirome4/DarkMatter_ML_TFG/ci.yml?branch=origin)](https://github.com/martacanirome4/DarkMatter_ML_TFG/actions)
 [![Last commit](https://img.shields.io/github/last-commit/martacanirome4/DarkMatter_ML_TFG)](https://github.com/martacanirome4/dark-matter-api/commits/main)
 ---
 
