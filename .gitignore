@@ -1,26 +1,34 @@
-# Ignorar archivos del sistema de macOS
+# System files
 .DS_Store
+Thumbs.db
+
+.vscode/
 
 # Ignorar archivos de logs
 *.log
 
-# Ignorar node_modules en proyectos de Node.js
-node_modules/
-
 # Ignorar dependencias de Python
 __pycache__/
-
-src/.ipynb_checkpoints/
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyc
 
 # Ignorar archivos de configuración de Visual Studio Code
 .vscode/
 
-# Ignorar archivos de configuración de Jupyter Notebook
+# Jupyter Notebook checkpoints
 .ipynb_checkpoints/
+src/.ipynb_checkpoints/
 
-# Ignorar archivos de configuración de Python
-*.pyc
+# Jupyter runtime files
+*.nbconvert.ipynb
+*.nbstripout
 
-
-# Ingorar carpeta de entorno virtual de Python
+# Virtual environments
+.env/
 .venv/
+env/
+venv/
+ENV/
