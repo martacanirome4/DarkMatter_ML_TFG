@@ -119,20 +119,15 @@ jupyter notebook notebooks/
    - Preparación de datos
    - Entrenamiento One-Class SVM
    - Evaluación y visualización de resultados
+   - **Análisis comparativo**: Fusión de resultados OCSVM + ANN
    
 2. **Notebooks ANN**: Redes neuronales de referencia
    - Implementación del modelo de Gammaldi et al. (2023)
    - Comparación con resultados publicados
-   
-3. **Análisis comparativo**: Fusión de resultados OCSVM + ANN
-
-### 4. Resultados y visualizaciones
-Los resultados se generan automáticamente en:
-- `TFG_codigo_final/data/results/`: Archivos de datos procesados
 
 ---
 
-## 📊 Resultados destacados
+## Resultados destacados
 
 ### Hiperfrontera de decisión One-Class SVM 2F
 ![ocsvm_optimal_boundary_2F](https://github.com/user-attachments/assets/34bb135e-0c99-48f6-b754-70c4c6ad5e01)
